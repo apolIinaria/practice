@@ -1,0 +1,18 @@
+Source: count-files
+Section: utils
+Priority: optional
+Maintainer: apolIinaria <pnovomlynets@gmail.com>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.2
+Homepage: https://github.com/apolIinaria/practice
+#Vcs-Browser: https://salsa.debian.org/debian/count-files
+#Vcs-Git: https://salsa.debian.org/debian/count-files.git
+
+Package: count-files
+Architecture: all
+Depends: ${misc:Depends}, bash, coreutils, findutils
+Description: Script to count regular files in /etc
+ A Bash script that counts the number of regular files
+ in the /etc directory, excluding directories and
+ symbolic links.
